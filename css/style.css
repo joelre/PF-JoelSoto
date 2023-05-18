@@ -1,0 +1,398 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: whitesmoke;
+    padding-bottom: 40px;
+}
+
+header nav{
+    background-color: rgb(230, 218, 205);
+    top: 0;
+    margin-top: 0;
+    z-index: 2;
+    padding-bottom: 30px;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px -500px 10px 600px;
+
+}
+
+header nav ul li a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+header h1{
+    padding-top: 40px;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    font-size: medium;
+}
+
+
+main{
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+
+/* Pagina de inicio */
+
+.galeria{
+    position: relative;
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+.galeria p{
+    padding:10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicios{
+    position: relative;
+    background-color: rgb(241, 238, 235);
+}
+
+.servicios p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.servicio_caja{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    margin: 20px 140px 20px 30px;
+    background-color: whitesmoke;
+    border: 2px solid rgba(172, 169, 169, 0.396);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    overflow: hidden;
+}
+
+.servicio_caja img{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+}
+
+.servicio_caja p{
+    position: absolute;
+    left:0%;
+    top: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.ubicacion{
+    background-color: rgba(222, 232, 241, 0.383);
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+
+.ubicacion p{
+    font-size: medium;
+    font-weight: bold;
+}
+
+.ubicacion_texto{
+    position: absolute;
+    left: 22%;
+    top: 20%;
+}
+
+.ubicacion_texto p{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.ubicacion_gps{
+    position: absolute;
+    left: 0;
+}
+
+.ubicacion_gps p{
+    text-align: left;
+}
+
+.ubicacion_gps iframe{
+    margin-top: 5%;
+}
+
+/* Pagina de cortes */
+
+.presentacion_cortes  h1{
+    text-align: center;
+}
+
+.presentacion_cortes p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.caja_cortes{
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    right: 10%;
+    height: 500px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 5% 3%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.imagenes_cortes img{
+    position: absolute;
+    top: 0;
+    height: 40%;
+    width: 100%;
+}
+
+.descripcion_cortes{
+    position: absolute;
+    top: 45%;
+    text-align: center;
+}
+
+.precio_cortes{
+    position: absolute;
+    top: 90%;
+    left: 25%;
+}
+
+.precio_cortes p{
+    font-weight: bold;
+}
+
+/* Pagina de turnos */
+
+.presentacion_turnos  h1{
+    text-align: center;
+}
+
+.presentacion_turnos p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.caja_formulario{
+    position: relative;
+}
+
+.formulario_turno fieldset{
+    padding-top: 2%;
+    border: 0px solid white;
+}
+
+.casillas_turnos {
+    padding-top: 3%;
+}
+
+.casillas_turnos label{
+    position: absolute;
+    left: 40%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.casillas_turnos input{
+    position: absolute;
+    left: 50%;
+}
+
+.casillas_turnos select{
+    position: absolute;
+    left: 50%;
+}
+
+.boton_enviar_turno{
+    padding: 3% 0 10% 46%;
+}
+
+.boton_enviar_turno input{
+    background-color: rgba(102, 102, 216, 0.75);
+    color: white;
+    font-size: medium;
+    border: 0px solid white;
+    border-radius: 4px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Pagina de nosotros */
+
+.historia_nosotros{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.historia_nosotros  h1{
+    text-align: center;
+}
+
+.historia_texto{
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    top: 10%;
+    left: 2%;
+    overflow: hidden;
+}
+
+.historia_texto p{
+    text-align: left;
+    font-size: large;
+    font-weight: 800;
+}
+
+.imagen1_nosotros{
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    left: 60%;
+    right: 5%;
+    overflow: hidden;
+}
+
+.imagen2_nosotros{
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 50%;
+    left: 60%;
+    right: 5%;
+    overflow: hidden;
+}
+
+.equipo_de_trabajo_nosotros{
+    position: relative;
+    background-color: rgb(241, 238, 235);
+}
+
+.equipo_de_trabajo_nosotros h2{
+    text-align: center;
+}
+
+.caja_imagenes_nosotros{
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 7%;
+    margin-bottom: 7%;
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 360px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    background-color: rgba(218, 165, 32, 0.572);
+}
+
+/* pagaina Beneficios */
+
+.presentacion_beneficios{
+    position: relative;
+}
+
+.presentacion_beneficios  h1{
+    text-align: center;
+}
+
+.presentacion_beneficios p{
+    padding-top: 15px;
+    text-align: center;
+    width: 400px;
+    margin-left: 40%;
+}
+
+.envoltorio_beneficios{
+    position: relative;
+    background-color: rgb(241, 238, 235);
+}
+
+.caja_beneficios{
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 17%;
+    margin-bottom: 7%;
+    height: 300px;
+    width: 200px;
+    border: 1px solid rgba(181, 179, 179, 0.617);
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+}
+
+.caja_beneficios img{
+    position: absolute;
+    left: 25%;
+    top: 5%;
+}
+
+.caja_beneficios p{
+    margin-left: 30%;
+    margin-top: 70%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.divisor_beneficio{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 1px;
+    border: 1px solid grey;
+}
+
+.caja_beneficios span{
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    font-size: x-large;
+    font-weight: 900;
+    color: green;
+}
+
+
+/* Pie de pagina */
+
+footer{
+    position: relative;
+    background-color: rgba(119, 136, 153, 0.671);
+}
+
+.redes{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.redes h3{
+    font-size: medium;
+}
+
+.derechos_autor{
+    margin-left: 86%;
+}
+
