@@ -71,7 +71,6 @@ main{
 /* Servicios index */
 
 .servicios{
-    position: relative;
     background-color: rgb(241, 238, 235);
 }
 
@@ -81,12 +80,22 @@ main{
     text-align: center;
 }
 
+.envoltorio-caja-servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
 .servicio_caja{
-    display: inline-block;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 300px;
     height: 500px;
-    margin: 20px 140px 20px 30px;
     background-color: whitesmoke;
     border: 2px solid rgba(172, 169, 169, 0.396);
     border-radius: 20px;
@@ -95,23 +104,47 @@ main{
 }
 
 .servicio_caja img{
-    position: absolute;
-    top: 10%;
-    left: 35%;
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
 }
 
 .servicio_caja p{
-    position: absolute;
-    left:0%;
-    top: 50%;
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: center;
     text-align: center;
     font-weight: bold;
     font-size: large;
 }
 
+
+
 @media screen and (min-width:992px){
+    .envoltorio-caja-servicios{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 100%;
+        justify-items: center;
+        align-items: center;
+        height: 600px;
+        width: 100%;
+    }
     
+    .servicio_caja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 300px;
+        height: 500px;
+        background-color: whitesmoke;
+        border: 2px solid rgba(172, 169, 169, 0.396);
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px whitesmoke;
+        overflow: hidden;
+    }
 }
+
 
 /* Ubicación index */
 
