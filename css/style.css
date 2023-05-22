@@ -446,7 +446,13 @@ footer{
     font-size: medium;
 }
 
-.derechos_autor{
-    margin-left: 86%;
+.envoltorio-derechos-autor{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.envoltorio-derechos-autor h4{
+    margin: 0 5rem;
+    font-size: medium;
 }
 
