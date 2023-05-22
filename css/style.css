@@ -75,7 +75,7 @@ main{
 }
 
 .servicios p{
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
@@ -94,8 +94,8 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 300px;
-    height: 500px;
+    width: 18.7rem;
+    height: 31.25rem;
     background-color: whitesmoke;
     border: 2px solid rgba(172, 169, 169, 0.396);
     border-radius: 20px;
@@ -135,8 +135,8 @@ main{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        width: 300px;
-        height: 500px;
+        width: 18.7rem;
+        height: 31.25rem;
         background-color: whitesmoke;
         border: 2px solid rgba(172, 169, 169, 0.396);
         border-radius: 20px;
@@ -150,39 +150,77 @@ main{
 
 
 .ubicacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 18rem;
     background-color: rgba(222, 232, 241, 0.383);
-    position: relative;
-    height: 450px;
-    overflow: hidden;
 }
 
-.ubicacion p{
+.ubicacion_gps{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+}
+
+.ubicacion_gps p{
+    align-self: center;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ubicacion_gps iframe{
+    justify-self: center;
+}
+
+.ubicacion_texto{
+    justify-self: center;
+    width: 30rem;
+}
+
+.ubicacion_texto p{
+    text-align: center;
     font-size: medium;
     font-weight: bold;
 }
 
-.ubicacion_texto{
-    position: absolute;
-    left: 22%;
-    top: 20%;
-}
+@media screen and (min-width:992px){
+    .ubicacion{
+        display: grid;
+        grid-template-columns: 25rem 80%;   
+        grid-template-rows: 1fr;
+        background-color: rgba(222, 232, 241, 0.383);
+    }
+    
+    .contenedor_gps{
+        grid-column-start: 1;
+    }
 
-.ubicacion_texto p{
-    font-size: x-large;
-    font-weight: bold;
-}
+    .ubicacion_gps{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 90%;
+    }
 
-.ubicacion_gps{
-    position: absolute;
-    left: 0;
-}
-
-.ubicacion_gps p{
-    text-align: left;
-}
-
-.ubicacion_gps iframe{
-    margin-top: 5%;
+    .ubicacion_gps p{
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+    }
+    
+    .ubicacion_texto{
+        grid-column-start: 2;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+    
+    .ubicacion_texto p{
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+    }
+    
 }
 
 /* Pagina de cortes */
