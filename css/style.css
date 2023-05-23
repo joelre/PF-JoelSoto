@@ -61,7 +61,7 @@ main{
     width: 100%;
 }
 
-.servicio_caja{
+.servicio-caja{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -74,14 +74,14 @@ main{
     overflow: hidden;
 }
 
-.servicio_caja img{
+.servicio-caja img{
     grid-row-start: 1;
     justify-self: center;
     align-self: center;
     max-width: 100%;
 }
 
-.servicio_caja p{
+.servicio-caja p{
     grid-row-start: 2;
     justify-self: center;
     align-self: center;
@@ -104,7 +104,7 @@ main{
         overflow: hidden;
     }
     
-    .servicio_caja{
+    .servicio-caja{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -130,29 +130,29 @@ main{
     background-color: rgba(222, 232, 241, 0.383);
 }
 
-.ubicacion_gps{
+.ubicacion-gps{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 90%;
 }
 
-.ubicacion_gps p{
+.ubicacion-gps p{
     align-self: center;
     font-size: medium;
     font-weight: bold;
     text-align: center;
 }
 
-.ubicacion_gps iframe{
+.ubicacion-gps iframe{
     justify-self: center;
 }
 
-.ubicacion_texto{
+.ubicacion-texto{
     justify-self: center;
     width: 30rem;
 }
 
-.ubicacion_texto p{
+.ubicacion-texto p{
     text-align: center;
     font-size: medium;
     font-weight: bold;
@@ -166,30 +166,30 @@ main{
         background-color: rgba(222, 232, 241, 0.383);
     }
     
-    .contenedor_gps{
+    .contenedor-gps{
         grid-column-start: 1;
     }
 
-    .ubicacion_gps{
+    .ubicacion-gps{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10% 90%;
     }
 
-    .ubicacion_gps p{
+    .ubicacion-gps p{
         text-align: center;
         font-size: medium;
         font-weight: bold;
     }
     
-    .ubicacion_texto{
+    .ubicacion-texto{
         grid-column-start: 2;
         justify-self: center;
         align-self: center;
         width: 100%;
     }
     
-    .ubicacion_texto p{
+    .ubicacion-texto p{
         text-align: center;
         font-size: large;
         font-weight: bold;
@@ -199,11 +199,11 @@ main{
 
 /* Pagina de cortes */
 
-.presentacion_cortes  h1{
+.presentacion-cortes  h1{
     text-align: center;
 }
 
-.presentacion_cortes p{
+.presentacion-cortes p{
     padding-top: 15px;
     text-align: center;
 }
@@ -218,7 +218,7 @@ main{
     margin-bottom: 2rem;
 }
 
-.caja_cortes{
+.caja-cortes{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
@@ -231,15 +231,15 @@ main{
     overflow: hidden;
 }
 
-.imagenes_cortes img{
+.imagenes-cortes img{
     max-width: 100%;
 }
 
-.descripcion_cortes{
+.descripcion-cortes{
     text-align: center;
 }
 
-.precio_cortes p{
+.precio-cortes p{
     text-align: center;
     font-weight: bold;
 }
@@ -254,50 +254,50 @@ main{
 
 /* Pagina de turnos */
 
-.presentacion_turnos  h1{
+.presentacion-turnos  h1{
     text-align: center;
 }
 
-.presentacion_turnos p{
+.presentacion-turnos p{
     padding-top: 15px;
     text-align: center;
 }
 
-.caja_formulario{
+.caja-formulario{
     position: relative;
 }
 
-.formulario_turno fieldset{
+.formulario-turno fieldset{
     padding-top: 2%;
     border: 0px solid white;
 }
 
-.casillas_turnos {
+.casillas-turnos {
     padding-top: 3%;
 }
 
-.casillas_turnos label{
+.casillas-turnos label{
     position: absolute;
     left: 40%;
     font-size: large;
     font-weight: bold;
 }
 
-.casillas_turnos input{
+.casillas-turnos input{
     position: absolute;
     left: 50%;
 }
 
-.casillas_turnos select{
+.casillas-turnos select{
     position: absolute;
     left: 50%;
 }
 
-.boton_enviar_turno{
+.boton-enviar-turno{
     padding: 3% 0 10% 46%;
 }
 
-.boton_enviar_turno input{
+.boton-enviar-turno input{
     background-color: rgba(102, 102, 216, 0.75);
     color: white;
     font-size: medium;
@@ -308,17 +308,17 @@ main{
 
 /* Pagina de nosotros */
 
-.historia_nosotros{
+.historia-nosotros{
     position: relative;
     width: 100%;
     height: 700px;
 }
 
-.historia_nosotros  h1{
+.historia-nosotros  h1{
     text-align: center;
 }
 
-.historia_texto{
+.historia-texto{
     position: absolute;
     width: 50%;
     height: 70%;
@@ -327,13 +327,13 @@ main{
     overflow: hidden;
 }
 
-.historia_texto p{
+.historia-texto p{
     text-align: left;
     font-size: large;
     font-weight: 800;
 }
 
-.imagen1_nosotros{
+.imagen1-nosotros{
     position: absolute;
     width: 100%;
     height: 50%;
@@ -343,7 +343,7 @@ main{
     overflow: hidden;
 }
 
-.imagen2_nosotros{
+.imagen2-nosotros{
     position: absolute;
     top: 45%;
     width: 100%;
@@ -353,16 +353,16 @@ main{
     overflow: hidden;
 }
 
-.equipo_de_trabajo_nosotros{
+.equipo-de-trabajo-nosotros{
     position: relative;
     background-color: rgb(241, 238, 235);
 }
 
-.equipo_de_trabajo_nosotros h2{
+.equipo-de-trabajo-nosotros h2{
     text-align: center;
 }
 
-.caja_imagenes_nosotros{
+.caja-imagenes-nosotros{
     display: inline-block;
     margin-top: 5%;
     margin-left: 7%;
@@ -378,27 +378,27 @@ main{
 
 /* pagaina Beneficios */
 
-.presentacion_beneficios{
+.presentacion-beneficios{
     position: relative;
 }
 
-.presentacion_beneficios  h1{
+.presentacion-beneficios  h1{
     text-align: center;
 }
 
-.presentacion_beneficios p{
+.presentacion-beneficios p{
     padding-top: 15px;
     text-align: center;
     width: 400px;
     margin-left: 40%;
 }
 
-.envoltorio_beneficios{
+.envoltorio-beneficios{
     position: relative;
     background-color: rgb(241, 238, 235);
 }
 
-.caja_beneficios{
+.caja-beneficios{
     position: relative;
     display: inline-block;
     margin-top: 5%;
@@ -412,13 +412,13 @@ main{
     overflow: hidden;
 }
 
-.caja_beneficios img{
+.caja-beneficios img{
     position: absolute;
     left: 25%;
     top: 5%;
 }
 
-.caja_beneficios p{
+.caja-beneficios p{
     margin-left: 30%;
     margin-top: 70%;
     width: 100px;
@@ -426,7 +426,7 @@ main{
     overflow: hidden;
 }
 
-.divisor_beneficio{
+.divisor-beneficio{
     position: absolute;
     top: 40%;
     width: 100%;
@@ -434,7 +434,7 @@ main{
     border: 1px solid grey;
 }
 
-.caja_beneficios span{
+.caja-beneficios span{
     position: absolute;
     top: 90%;
     left: 30%;
