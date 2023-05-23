@@ -207,40 +207,44 @@ main{
     text-align: center;
 }
 
+.envoltorio-cajas-cortes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
 .caja_cortes{
-    display: inline-block;
-    position: relative;
-    left: 10%;
-    right: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    justify-content: center;
+    justify-items: center;
     height: 500px;
     width: 200px;
     border: 2px solid black;
-    margin: 5% 3%;
     border-radius: 40px;
     overflow: hidden;
 }
 
-.imagenes_cortes img{
-    position: absolute;
-    top: 0;
-    height: 40%;
-    width: 100%;
-}
-
 .descripcion_cortes{
-    position: absolute;
-    top: 45%;
     text-align: center;
 }
 
-.precio_cortes{
-    position: absolute;
-    top: 90%;
-    left: 25%;
+.precio_cortes p{
+    text-align: center;
+    font-weight: bold;
 }
 
-.precio_cortes p{
-    font-weight: bold;
+@media screen and (min-width:992px){
+    .envoltorio-cajas-cortes{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
 }
 
 /* Pagina de turnos */
@@ -457,7 +461,11 @@ footer{
 }
 
 .envoltorio-derechos-autor h4{
-    margin: 0 5rem;
     font-size: medium;
 }
 
+@media screen and (min-width:992px){
+    .envoltorio-derechos-autor h4{
+        margin: 0 5rem;
+    }
+}
