@@ -22,6 +22,12 @@ main{
     background-color: whitesmoke;
 }
 
+.titulos{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Pagina de inicio */
 
 .galeria{
@@ -45,12 +51,6 @@ main{
     background-color: rgb(241, 238, 235);
 }
 
-.servicios p{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
-
 .envoltorio-caja-servicios{
     display: grid;
     grid-template-columns: 1fr;
@@ -65,8 +65,8 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 290px;
-    height: 500px;
+    width: 18rem;
+    height: 31rem;
     background-color: whitesmoke;
     border: 2px solid rgba(172, 169, 169, 0.396);
     border-radius: 20px;
@@ -101,6 +101,7 @@ main{
         align-items: center;
         height: 600px;
         width: 100%;
+        overflow: hidden;
     }
     
     .servicio_caja{
@@ -108,7 +109,7 @@ main{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         width: 15vw;
-        height: 50vh;
+        height: 31rem;
         background-color: whitesmoke;
         border: 2px solid rgba(172, 169, 169, 0.396);
         border-radius: 20px;
@@ -225,9 +226,13 @@ main{
     justify-items: center;
     height: 500px;
     width: 200px;
-    border: 2px solid black;
     border-radius: 40px;
+    box-shadow: 2px 2px 5px rgb(106, 104, 104);
     overflow: hidden;
+}
+
+.imagenes_cortes img{
+    max-width: 100%;
 }
 
 .descripcion_cortes{
