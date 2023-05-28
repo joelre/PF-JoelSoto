@@ -16,7 +16,6 @@ header h2{
     font-size: medium;
 }
 
-
 main{
     overflow: hidden;
     background-color: whitesmoke;
@@ -89,8 +88,6 @@ main{
     font-weight: bold;
     font-size: medium;
 }
-
-
 
 @media screen and (min-width:992px){
     .envoltorio-caja-servicios{
