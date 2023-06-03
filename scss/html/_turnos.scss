@@ -1,0 +1,53 @@
+/* Pagina de turnos */
+
+.presentacion-turnos  h1{
+    text-align: center;
+}
+
+.presentacion-turnos p{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.caja-formulario{
+    position: relative;
+}
+
+.formulario-turno fieldset{
+    padding-top: 2%;
+    border: 0px solid white;
+}
+
+.casillas-turnos {
+    padding-top: 3%;
+}
+
+.casillas-turnos label{
+    position: absolute;
+    left: 40%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.casillas-turnos input{
+    position: absolute;
+    left: 50%;
+}
+
+.casillas-turnos select{
+    position: absolute;
+    left: 50%;
+}
+
+.boton-enviar-turno{
+    padding: 3% 0 10% 46%;
+}
+
+.boton-enviar-turno input{
+    background-color: rgba(102, 102, 216, 0.75);
+    color: white;
+    font-size: medium;
+    border: 0px solid white;
+    border-radius: 4px;
+    padding: 0px 10px 0px 10px;
+}

@@ -1,0 +1,66 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1{
+    padding-top: 40px;
+    text-align: center;
+}
+
+header h2{
+    text-align: center;
+    font-size: medium;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
+.titulos{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    background-color: rgba(119, 136, 153, 0.671);
+}
+
+.redes{
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.redes h3{
+    font-size: medium;
+}
+
+.envoltorio-derechos-autor{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.envoltorio-derechos-autor h4{
+    font-size: medium;
+}
+
+@media screen and (min-width:992px){
+    .envoltorio-derechos-autor h4{
+        margin: 0 5rem;
+    }
+}
+
+//Importacion de páginas
+@import "html/index";
+/* Cortes */
+@import "html/cortes";
+/* Turnos */
+@import "html/turnos";
+/* Nosotros */
+@import "html/nosotros";
+/* Beneficios */
+@import "html/beneficios";

@@ -1,0 +1,177 @@
+
+/* Página de inicio */
+.galeria{
+    padding-bottom: 20px;
+    background-color: whitesmoke;
+}
+
+.galeria img{
+    max-width: 100%;
+}
+
+.galeria p{
+    padding:10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Servicios */
+
+.servicios{
+    background-color: rgb(241, 238, 235);
+}
+
+.envoltorio-caja-servicios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    row-gap: 48px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.servicio-caja{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 18rem;
+    height: 31rem;
+    background-color: whitesmoke;
+    border: 2px solid rgba(172, 169, 169, 0.396);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px whitesmoke;
+    overflow: hidden;
+}
+
+.servicio-caja img{
+    grid-row-start: 1;
+    justify-self: center;
+    align-self: center;
+    max-width: 100%;
+}
+
+.servicio-caja p{
+    grid-row-start: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+}
+
+@media screen and (min-width:992px){
+    .envoltorio-caja-servicios{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 100%;
+        justify-items: center;
+        align-items: center;
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .servicio-caja{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 15vw;
+        height: 31rem;
+        background-color: whitesmoke;
+        border: 2px solid rgba(172, 169, 169, 0.396);
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px whitesmoke;
+        overflow: hidden;
+    }
+
+}
+
+
+/* Ubicación */
+
+
+.ubicacion{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30rem 1fr;
+    background-color: rgba(222, 232, 241, 0.383);
+}
+
+.ubicacion-gps{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+}
+
+.ubicacion-gps p{
+    align-self: center;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ubicacion-gps iframe{
+    width: 48vw;
+    height: 430px;
+    justify-self: center;
+}
+
+.ubicacion-texto{
+    justify-self: center;
+    width: 1fr;
+}
+
+.ubicacion-texto p{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+@media screen and (min-width:992px){
+    .ubicacion{
+        display: grid;
+        grid-template-columns: 440px 1fr;   
+        grid-template-rows: 1fr;
+        background-color: rgba(222, 232, 241, 0.383);
+    }
+
+    
+    .contenedor-gps{
+        grid-column-start: 1;
+    }
+
+    .ubicacion-gps{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 90%;
+    }
+
+    .ubicacion-gps iframe{
+        justify-self: left;
+        width:400px;
+        height:400px;
+    }
+
+    .ubicacion-gps p{
+        padding: 2.2rem 3rem 0 0;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+    }
+    
+    .ubicacion-texto{
+        grid-column-start: 2;
+        justify-self: center;
+        align-self: center;
+        padding: 0rem 5rem;
+        width: 100%;
+    }
+    
+    .ubicacion-texto p{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+}
