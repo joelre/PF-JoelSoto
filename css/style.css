@@ -17,7 +17,6 @@ header h2{
 }
 
 main{
-    overflow: hidden;
     background-color: whitesmoke;
 }
 
@@ -123,7 +122,7 @@ main{
 .ubicacion{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30rem 18rem;
+    grid-template-rows: 30rem 1fr;
     background-color: rgba(222, 232, 241, 0.383);
 }
 
@@ -141,12 +140,14 @@ main{
 }
 
 .ubicacion-gps iframe{
+    width: 48vw;
+    height: 430px;
     justify-self: center;
 }
 
 .ubicacion-texto{
     justify-self: center;
-    width: 30rem;
+    width: 1fr;
 }
 
 .ubicacion-texto p{
@@ -158,10 +159,11 @@ main{
 @media screen and (min-width:992px){
     .ubicacion{
         display: grid;
-        grid-template-columns: 25rem 80%;   
+        grid-template-columns: 440px 1fr;   
         grid-template-rows: 1fr;
         background-color: rgba(222, 232, 241, 0.383);
     }
+
     
     .contenedor-gps{
         grid-column-start: 1;
@@ -173,7 +175,14 @@ main{
         grid-template-rows: 10% 90%;
     }
 
+    .ubicacion-gps iframe{
+        justify-self: left;
+        width:400px;
+        height:400px;
+    }
+
     .ubicacion-gps p{
+        padding: 2.2rem 3rem 0 0;
         text-align: center;
         font-size: medium;
         font-weight: bold;
@@ -183,12 +192,13 @@ main{
         grid-column-start: 2;
         justify-self: center;
         align-self: center;
+        padding: 0rem 5rem;
         width: 100%;
     }
     
     .ubicacion-texto p{
         text-align: center;
-        font-size: large;
+        font-size: 1.2rem;
         font-weight: bold;
     }
     
@@ -212,7 +222,7 @@ main{
     justify-content: center;
     justify-items: center;
     gap: 2rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
 
 .caja-cortes{
