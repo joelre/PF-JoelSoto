@@ -1,66 +1,68 @@
 /* pagaina Beneficios */
 
-.presentacion-beneficios{
-    position: relative;
-}
+main {
+    .presentacion-beneficios {
+        position: relative;
 
-.presentacion-beneficios  h1{
-    text-align: center;
-}
+        h1 {
+            text-align: center;
+        }
 
-.presentacion-beneficios p{
-    padding-top: 15px;
-    text-align: center;
-    width: 400px;
-    margin-left: 40%;
-}
+        p {
+            padding-top: 15px;
+            text-align: center;
+            width: 400px;
+            margin-left: 40%;
+        }
+    }
 
-.envoltorio-beneficios{
-    position: relative;
-    background-color: rgb(241, 238, 235);
-}
+    .envoltorio-beneficios {
+        position: relative;
+        background-color: rgb(241, 238, 235);
 
-.caja-beneficios{
-    position: relative;
-    display: inline-block;
-    margin-top: 5%;
-    margin-left: 17%;
-    margin-bottom: 7%;
-    height: 300px;
-    width: 200px;
-    border: 1px solid rgba(181, 179, 179, 0.617);
-    border-radius: 30px;
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden;
-}
+        .caja-beneficios {
+            position: relative;
+            display: inline-block;
+            margin-top: 5%;
+            margin-left: 17%;
+            margin-bottom: 7%;
+            height: 300px;
+            width: 200px;
+            border: 1px solid rgba(181, 179, 179, 0.617);
+            border-radius: 30px;
+            box-shadow: 2px 2px 4px black;
+            overflow: hidden;
 
-.caja-beneficios img{
-    position: absolute;
-    left: 25%;
-    top: 5%;
-}
+            img {
+                position: absolute;
+                left: 25%;
+                top: 5%;
+            }
 
-.caja-beneficios p{
-    margin-left: 30%;
-    margin-top: 70%;
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-}
+            .divisor-beneficio {
+                position: absolute;
+                top: 40%;
+                width: 100%;
+                height: 1px;
+                border: 1px solid grey;
+            }
 
-.divisor-beneficio{
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    height: 1px;
-    border: 1px solid grey;
-}
+            p {
+                margin-left: 30%;
+                margin-top: 70%;
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+            }
 
-.caja-beneficios span{
-    position: absolute;
-    top: 90%;
-    left: 30%;
-    font-size: x-large;
-    font-weight: 900;
-    color: green;
+            span {
+                position: absolute;
+                top: 90%;
+                left: 30%;
+                font-size: x-large;
+                font-weight: 900;
+                color: green;
+            }
+        }
+    }
 }
