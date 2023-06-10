@@ -12,39 +12,41 @@ main {
         }
     }
 
+
     .caja-turno {
         .formulario-turno {
-            position: relative;
-
-            fieldset {
-                padding-top: 2%;
-                border: 0px solid white;
-
+            fieldset {     
                 .casillas-turnos {
-                    padding-top: 3%;
-
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    justify-content: center;
+                    padding-bottom: 2rem;
                     label {
-                        position: absolute;
-                        left: 40%;
+                        text-align: center;
                         font-size: large;
                         font-weight: bold;
                     }
 
                     input {
-                        position: absolute;
-                        left: 50%;
+                        justify-self: center;
+                        width: 30vw;
                     }
 
                     select {
-                        position: absolute;
-                        left: 50%;
+                        justify-self: center;
+                        width: 30vw;
                     }
                 }
 
                 .boton-enviar-turno {
-                    padding: 3% 0 10% 46%;
-
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                    padding: 2rem 0rem 2rem 0rem;
                     input {
+                        justify-self: center;
+                        width: 30vw;                        
                         background-color: rgba(102, 102, 216, 0.75);
                         color: white;
                         font-size: medium;
@@ -57,65 +59,36 @@ main {
             }
         }
     }
-}
-
-
-/*
-main {
-    .presentacion-turnos {
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            padding-top: 15px;
-            text-align: center;
-        }
-    }
-
-    .caja-turno {
-        .formulario-turno {
-            position: relative;
-
-            fieldset {
-                padding-top: 2%;
-                border: 0px solid white;
-
-                .casillas-turnos {
-                    padding-top: 3%;
-
-                    label {
-                        position: absolute;
-                        left: 40%;
-                        font-size: large;
-                        font-weight: bold;
+    @media screen and (min-width:992px) {
+        .caja-turno{
+            .formulario-turno{
+                fieldset{
+                    
+                    .casillas-turnos{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        justify-content: center;
+                        padding-top: 3rem;
+                        label{
+                            grid-column-start: 3;
+                        }
+                        input{
+                            width: 15vw;
+                        }
+                        select{
+                            width: 15vw;
+                        }
                     }
-
-                    input {
-                        position: absolute;
-                        left: 50%;
-                    }
-
-                    select {
-                        position: absolute;
-                        left: 50%;
+                    .boton-enviar-turno{
+                        input{
+                            width: 10vw;
+                            justify-self: center;
+                        }
                     }
                 }
-
-                .boton-enviar-turno {
-                    padding: 3% 0 10% 46%;
-
-                    input {
-                        background-color: rgba(102, 102, 216, 0.75);
-                        color: white;
-                        font-size: medium;
-                        border: 0px solid white;
-                        border-radius: 4px;
-                        padding: 0px 10px 0px 10px;
-                    }
-                }
-
             }
         }
-    }
+        
+    } 
 }

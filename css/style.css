@@ -189,7 +189,6 @@ main .envoltorio-cajas-cortes {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
     justify-content: center;
-    justify-items: center;
     height: 500px;
     width: 200px;
     border-radius: 40px;
@@ -222,141 +221,83 @@ main .presentacion-turnos p {
   padding-top: 15px;
   text-align: center; }
 
-main .caja-turno .formulario-turno {
-  position: relative; }
-  main .caja-turno .formulario-turno fieldset {
-    padding-top: 2%;
-    border: 0px solid white; }
-    main .caja-turno .formulario-turno fieldset .casillas-turnos {
-      padding-top: 3%; }
-      main .caja-turno .formulario-turno fieldset .casillas-turnos label {
-        position: absolute;
-        left: 40%;
-        font-size: large;
-        font-weight: bold; }
-      main .caja-turno .formulario-turno fieldset .casillas-turnos input {
-        position: absolute;
-        left: 50%; }
-      main .caja-turno .formulario-turno fieldset .casillas-turnos select {
-        position: absolute;
-        left: 50%; }
-    main .caja-turno .formulario-turno fieldset .boton-enviar-turno {
-      padding: 3% 0 10% 46%; }
-      main .caja-turno .formulario-turno fieldset .boton-enviar-turno input {
-        background-color: rgba(102, 102, 216, 0.75);
-        color: white;
-        font-size: medium;
-        border: 0px solid white;
-        border-radius: 4px;
-        padding: 0px 10px 0px 10px; }
+main .caja-turno .formulario-turno fieldset .casillas-turnos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  padding-bottom: 2rem; }
+  main .caja-turno .formulario-turno fieldset .casillas-turnos label {
+    text-align: center;
+    font-size: large;
+    font-weight: bold; }
+  main .caja-turno .formulario-turno fieldset .casillas-turnos input {
+    justify-self: center;
+    width: 30vw; }
+  main .caja-turno .formulario-turno fieldset .casillas-turnos select {
+    justify-self: center;
+    width: 30vw; }
 
-/*
-main {
-    .presentacion-turnos {
-        h1 {
-            text-align: center;
-        }
+main .caja-turno .formulario-turno fieldset .boton-enviar-turno {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 2rem 0rem 2rem 0rem; }
+  main .caja-turno .formulario-turno fieldset .boton-enviar-turno input {
+    justify-self: center;
+    width: 30vw;
+    background-color: rgba(102, 102, 216, 0.75);
+    color: white;
+    font-size: medium;
+    border: 0px solid white;
+    border-radius: 4px;
+    padding: 0px 10px 0px 10px; }
 
-        p {
-            padding-top: 15px;
-            text-align: center;
-        }
-    }
+@media screen and (min-width: 992px) {
+  main .caja-turno .formulario-turno fieldset .casillas-turnos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    padding-top: 3rem; }
+    main .caja-turno .formulario-turno fieldset .casillas-turnos label {
+      grid-column-start: 3; }
+    main .caja-turno .formulario-turno fieldset .casillas-turnos input {
+      width: 15vw; }
+    main .caja-turno .formulario-turno fieldset .casillas-turnos select {
+      width: 15vw; }
+  main .caja-turno .formulario-turno fieldset .boton-enviar-turno input {
+    width: 10vw;
+    justify-self: center; } }
 
-    .caja-turno {
-        .formulario-turno {
-            position: relative;
-
-            fieldset {
-                padding-top: 2%;
-                border: 0px solid white;
-
-                .casillas-turnos {
-                    padding-top: 3%;
-
-                    label {
-                        position: absolute;
-                        left: 40%;
-                        font-size: large;
-                        font-weight: bold;
-                    }
-
-                    input {
-                        position: absolute;
-                        left: 50%;
-                    }
-
-                    select {
-                        position: absolute;
-                        left: 50%;
-                    }
-                }
-
-                .boton-enviar-turno {
-                    padding: 3% 0 10% 46%;
-
-                    input {
-                        background-color: rgba(102, 102, 216, 0.75);
-                        color: white;
-                        font-size: medium;
-                        border: 0px solid white;
-                        border-radius: 4px;
-                        padding: 0px 10px 0px 10px;
-                    }
-                }
-
-            }
-        }
-    }
-}
-
-*/
 /* Nosotros */
 /* Pagina de nosotros */
-main .historia-nosotros {
-  position: relative;
-  width: 100%;
-  height: 700px; }
-  main .historia-nosotros h1 {
-    text-align: center; }
-  main .historia-nosotros .historia-texto {
-    position: absolute;
-    width: 50%;
-    height: 70%;
-    top: 10%;
-    left: 2%;
-    overflow: hidden; }
-    main .historia-nosotros .historia-texto p {
-      text-align: left;
-      font-size: large;
-      font-weight: 800; }
-  main .historia-nosotros .imagen1-nosotros {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 10%;
-    left: 60%;
-    right: 5%;
-    overflow: hidden; }
-  main .historia-nosotros .imagen2-nosotros {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-    height: 50%;
-    left: 60%;
-    right: 5%;
-    overflow: hidden; }
+main h1 {
+  text-align: center; }
+
+main .historia-nosotros .historia-texto p {
+  text-align: center;
+  font-size: medium;
+  font-weight: 700; }
+
+main .historia-nosotros .imagen1-nosotros {
+  display: none; }
+
+main .historia-nosotros .imagen2-nosotros {
+  display: none; }
 
 main .equipo-de-trabajo-nosotros {
-  position: relative;
-  background-color: #f1eeeb; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2% repeat(4, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  background-color: #f1eeeb;
+  padding-bottom: 2rem; }
   main .equipo-de-trabajo-nosotros h2 {
     text-align: center; }
   main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros {
-    display: inline-block;
-    margin-top: 5%;
-    margin-left: 7%;
-    margin-bottom: 7%;
+    justify-self: center;
     height: 300px;
     width: 300px;
     border: 1px solid black;
@@ -365,53 +306,129 @@ main .equipo-de-trabajo-nosotros {
     overflow: hidden;
     background-color: rgba(218, 165, 32, 0.572); }
 
+@media screen and (min-width: 992px) {
+  main .historia-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 2rem; }
+    main .historia-nosotros .historia-texto {
+      grid-row: span 2; }
+      main .historia-nosotros .historia-texto p {
+        text-align: left;
+        font-size: 1.3vw;
+        font-weight: 700; }
+    main .historia-nosotros .imagen1-nosotros {
+      display: block;
+      justify-self: center;
+      grid-column-start: 2;
+      padding-bottom: 3rem; }
+      main .historia-nosotros .imagen1-nosotros img {
+        width: 42vw; }
+    main .historia-nosotros .imagen2-nosotros {
+      display: block;
+      justify-self: center;
+      grid-column-start: 2; }
+      main .historia-nosotros .imagen2-nosotros img {
+        width: 42vw; }
+  main .equipo-de-trabajo-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10% 2fr; }
+    main .equipo-de-trabajo-nosotros h2 {
+      grid-column: span 2; }
+    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros {
+      width: 270px;
+      height: 270px; } }
+
+@media screen and (min-width: 1374px) {
+  main .historia-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 2rem; }
+    main .historia-nosotros .historia-texto {
+      grid-row: span 2; }
+      main .historia-nosotros .historia-texto p {
+        text-align: left;
+        font-size: 1.3vw;
+        font-weight: 700; }
+    main .historia-nosotros .imagen1-nosotros {
+      display: block;
+      justify-self: center;
+      grid-column-start: 2;
+      padding-bottom: 3rem; }
+      main .historia-nosotros .imagen1-nosotros img {
+        width: 42vw; }
+    main .historia-nosotros .imagen2-nosotros {
+      display: block;
+      justify-self: center;
+      grid-column-start: 2; }
+      main .historia-nosotros .imagen2-nosotros img {
+        width: 42vw; }
+  main .equipo-de-trabajo-nosotros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 1fr; }
+    main .equipo-de-trabajo-nosotros h2 {
+      grid-column: span 4; } }
+
 /* Beneficios */
 /* pagaina Beneficios */
 main .presentacion-beneficios {
-  position: relative; }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20% 1fr;
+  justify-content: center; }
   main .presentacion-beneficios h1 {
     text-align: center; }
   main .presentacion-beneficios p {
     padding-top: 15px;
-    text-align: center;
-    width: 400px;
-    margin-left: 40%; }
+    text-align: center; }
 
 main .envoltorio-beneficios {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem 2rem 0rem;
+  gap: 2rem;
   background-color: #f1eeeb; }
   main .envoltorio-beneficios .caja-beneficios {
-    position: relative;
-    display: inline-block;
-    margin-top: 5%;
-    margin-left: 17%;
-    margin-bottom: 7%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 2% 40% 18%;
+    justify-content: center;
     height: 300px;
     width: 200px;
     border: 1px solid rgba(181, 179, 179, 0.617);
     border-radius: 30px;
-    box-shadow: 2px 2px 4px black;
-    overflow: hidden; }
+    box-shadow: 2px 2px 4px black; }
     main .envoltorio-beneficios .caja-beneficios img {
-      position: absolute;
-      left: 25%;
-      top: 5%; }
+      justify-self: center;
+      align-self: center; }
     main .envoltorio-beneficios .caja-beneficios .divisor-beneficio {
-      position: absolute;
-      top: 40%;
       width: 100%;
       height: 1px;
       border: 1px solid grey; }
-    main .envoltorio-beneficios .caja-beneficios p {
-      margin-left: 30%;
-      margin-top: 70%;
+    main .envoltorio-beneficios .caja-beneficios .descripcion-marca {
+      justify-self: center;
+      align-self: center;
       width: 100px;
       height: 100px;
       overflow: hidden; }
+      main .envoltorio-beneficios .caja-beneficios .descripcion-marca p {
+        text-align: center; }
     main .envoltorio-beneficios .caja-beneficios span {
-      position: absolute;
-      top: 90%;
-      left: 30%;
+      text-align: center;
       font-size: x-large;
       font-weight: 900;
       color: green; }
+
+@media screen and (min-width: 992px) {
+  main .envoltorio-beneficios {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    main .envoltorio-beneficios .caja-beneficios {
+      margin: 0 10vw; } }

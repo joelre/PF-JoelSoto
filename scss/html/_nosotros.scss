@@ -1,56 +1,43 @@
 /* Pagina de nosotros */
 
-main{
-    .historia-nosotros{
-        position: relative;
-        width: 100%;
-        height: 700px;
-        h1{
-            text-align: center;
-        }
-        .historia-texto{
-            position: absolute;
-            width: 50%;
-            height: 70%;
-            top: 10%;
-            left: 2%;
-            overflow: hidden;
-            p{
-                text-align: left;
-                font-size: large;
-                font-weight: 800;
+main {
+    h1 {
+        text-align: center;
+    }
+
+    .historia-nosotros {
+        .historia-texto {
+            p {
+                text-align: center;
+                font-size: medium;
+                font-weight: 700;
             }
         }
-        .imagen1-nosotros{
-            position: absolute;
-            width: 100%;
-            height: 50%;
-            top: 10%;
-            left: 60%;
-            right: 5%;
-            overflow: hidden;
+
+        .imagen1-nosotros {
+            display: none;
         }
-        .imagen2-nosotros{
-            position: absolute;
-            top: 45%;
-            width: 100%;
-            height: 50%;
-            left: 60%;
-            right: 5%;
-            overflow: hidden;
+
+        .imagen2-nosotros {
+            display: none;
         }
     }
-    .equipo-de-trabajo-nosotros{
-        position: relative;
+
+    .equipo-de-trabajo-nosotros {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2% repeat(4,1fr);
+        justify-content: center;
+        gap: 2rem;
         background-color: rgb(241, 238, 235);
-        h2{
+        padding-bottom: 2rem;
+
+        h2 {
             text-align: center;
         }
-        .caja-imagenes-nosotros{
-            display: inline-block;
-            margin-top: 5%;
-            margin-left: 7%;
-            margin-bottom: 7%;
+
+        .caja-imagenes-nosotros {
+            justify-self: center;
             height: 300px;
             width: 300px;
             border: 1px solid black;
@@ -58,6 +45,108 @@ main{
             box-shadow: 2px 2px 4px black;
             overflow: hidden;
             background-color: rgba(218, 165, 32, 0.572);
+        }
+    }
+
+    @media screen and (min-width:992px){
+        .historia-nosotros{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding-top: 2rem;
+            .historia-texto {
+                grid-row: span 2;
+    
+                p {
+                    text-align: left;
+                    font-size: 1.3vw;
+                    font-weight: 700;
+                }
+            }
+    
+            .imagen1-nosotros {
+                display: block;
+                justify-self: center;
+                grid-column-start: 2;
+                padding-bottom: 3rem;
+    
+                img {
+                    width: 42vw;
+                }
+            }
+    
+            .imagen2-nosotros {
+                display: block;
+                justify-self: center;
+                grid-column-start: 2;
+    
+                img {
+                    width: 42vw;
+                }
+            }
+        }
+        
+        .equipo-de-trabajo-nosotros {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 10% 2fr;
+            
+            h2 {
+                grid-column: span 2;
+            }
+
+            .caja-imagenes-nosotros{
+                width: 270px;
+                height: 270px;
+            }
+        }
+    }
+
+    @media screen and (min-width:1374px) {
+        .historia-nosotros{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding-top: 2rem;
+            .historia-texto {
+                grid-row: span 2;
+    
+                p {
+                    text-align: left;
+                    font-size: 1.3vw;
+                    font-weight: 700;
+                }
+            }
+    
+            .imagen1-nosotros {
+                display: block;
+                justify-self: center;
+                grid-column-start: 2;
+                padding-bottom: 3rem;
+    
+                img {
+                    width: 42vw;
+                }
+            }
+    
+            .imagen2-nosotros {
+                display: block;
+                justify-self: center;
+                grid-column-start: 2;
+    
+                img {
+                    width: 42vw;
+                }
+            }
+        }
+        
+        .equipo-de-trabajo-nosotros {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 10% 1fr;
+            h2 {
+                grid-column: span 4;
+            }
         }
     }
 }

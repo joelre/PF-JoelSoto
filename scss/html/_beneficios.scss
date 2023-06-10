@@ -2,7 +2,10 @@
 
 main {
     .presentacion-beneficios {
-        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 1fr;
+        justify-content: center;
 
         h1 {
             text-align: center;
@@ -11,57 +14,69 @@ main {
         p {
             padding-top: 15px;
             text-align: center;
-            width: 400px;
-            margin-left: 40%;
         }
     }
 
     .envoltorio-beneficios {
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0rem 2rem 0rem;
+        gap: 2rem;
         background-color: rgb(241, 238, 235);
-
+        
         .caja-beneficios {
-            position: relative;
-            display: inline-block;
-            margin-top: 5%;
-            margin-left: 17%;
-            margin-bottom: 7%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 40% 2% 40% 18%;
+            justify-content: center;
             height: 300px;
             width: 200px;
             border: 1px solid rgba(181, 179, 179, 0.617);
             border-radius: 30px;
             box-shadow: 2px 2px 4px black;
-            overflow: hidden;
 
             img {
-                position: absolute;
-                left: 25%;
-                top: 5%;
+                justify-self: center;
+                align-self: center;
             }
 
             .divisor-beneficio {
-                position: absolute;
-                top: 40%;
                 width: 100%;
                 height: 1px;
                 border: 1px solid grey;
             }
 
-            p {
-                margin-left: 30%;
-                margin-top: 70%;
+            .descripcion-marca {
+                justify-self: center;
+                align-self: center;
                 width: 100px;
                 height: 100px;
                 overflow: hidden;
+
+                p {
+                    text-align: center;
+                }
             }
 
+
             span {
-                position: absolute;
-                top: 90%;
-                left: 30%;
+                text-align: center;
                 font-size: x-large;
                 font-weight: 900;
                 color: green;
+            }
+        }
+    }
+
+    @media screen and (min-width:992px){
+        .envoltorio-beneficios{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .caja-beneficios{
+                margin: 0 10vw;
             }
         }
     }
