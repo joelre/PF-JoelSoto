@@ -33,9 +33,17 @@ main {
             box-shadow: 2px 2px 5px rgb(106, 104, 104);
             overflow: hidden;
 
-            img {
-                max-width: 100%;
+            .imagenes-cortes{
+                img {
+                    max-width: 100%;
+                }
+    
+                img:hover{
+                    transition: transform 1.2s;
+                    transform: scale(1.2);
+                }
             }
+            
 
             .descripcion-cortes {
                 text-align: center;

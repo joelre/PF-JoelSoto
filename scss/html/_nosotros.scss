@@ -45,6 +45,13 @@ main {
             box-shadow: 2px 2px 4px black;
             overflow: hidden;
             background-color: rgba(218, 165, 32, 0.572);
+
+            .nombre{
+                opacity: 0;
+            }
+            img:hover .nombre{
+                opacity: 1;
+            }
         }
     }
 

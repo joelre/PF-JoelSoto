@@ -194,8 +194,11 @@ main .envoltorio-cajas-cortes {
     border-radius: 40px;
     box-shadow: 2px 2px 5px #6a6868;
     overflow: hidden; }
-    main .envoltorio-cajas-cortes .caja-cortes img {
+    main .envoltorio-cajas-cortes .caja-cortes .imagenes-cortes img {
       max-width: 100%; }
+    main .envoltorio-cajas-cortes .caja-cortes .imagenes-cortes img:hover {
+      transition: transform 1.2s;
+      transform: scale(1.2); }
     main .envoltorio-cajas-cortes .caja-cortes .descripcion-cortes {
       text-align: center; }
     main .envoltorio-cajas-cortes .caja-cortes .precio-cortes p {
@@ -305,6 +308,10 @@ main .equipo-de-trabajo-nosotros {
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
     background-color: rgba(218, 165, 32, 0.572); }
+    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros .nombre {
+      opacity: 0; }
+    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros img:hover .nombre {
+      opacity: 1; }
 
 @media screen and (min-width: 992px) {
   main .historia-nosotros {
