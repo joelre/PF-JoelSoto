@@ -1,0 +1,8 @@
+@mixin grid-centrados($cant-colum,$tam-colum,$cant-filas,$tam-filas,$espaciado){
+    display: grid;
+    grid-template-columns: repeat($cant-colum,$tam-colum);
+    grid-template-rows: repeat($cant-filas,$tam-filas);
+    gap: $espaciado;
+    justify-content: center;
+    justify-items: center;
+}

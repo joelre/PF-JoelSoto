@@ -16,34 +16,29 @@ header h2 {
 main {
   background-color: whitesmoke; }
 
-.titulos {
+footer {
+  position: relative;
+  background-color: rgba(119, 136, 153, 0.671); }
+  footer .redes {
+    padding-left: 10px;
+    padding-top: 15px; }
+    footer .redes h3 {
+      font-size: medium; }
+  footer .envoltorio-derechos-autor {
+    display: flex;
+    justify-content: flex-end; }
+    footer .envoltorio-derechos-autor h4 {
+      font-size: medium; }
+  @media screen and (min-width: 992px) {
+    footer .envoltorio-derechos-autor h4 {
+      margin: 0 5rem; } }
+
+/* Página de inicio */
+main .servicios .titulo, main .presentacion-cortes .titulo, main .presentacion-turnos .titulo, main .titulo, main .presentacion-beneficios .titulo {
   font-size: 2rem;
   font-weight: bold;
   text-align: center; }
 
-footer {
-  position: relative;
-  background-color: rgba(119, 136, 153, 0.671); }
-
-.redes {
-  padding-left: 10px;
-  padding-top: 15px; }
-
-.redes h3 {
-  font-size: medium; }
-
-.envoltorio-derechos-autor {
-  display: flex;
-  justify-content: flex-end; }
-
-.envoltorio-derechos-autor h4 {
-  font-size: medium; }
-
-@media screen and (min-width: 992px) {
-  .envoltorio-derechos-autor h4 {
-    margin: 0 5rem; } }
-
-/* Página de inicio */
 main .galeria {
   padding-bottom: 20px;
   background-color: whitesmoke; }
@@ -58,16 +53,20 @@ main .servicios {
   background-color: #f1eeeb; }
   main .servicios .envoltorio-caja-servicios {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    row-gap: 48px;
+    gap: 0px;
+    justify-content: center;
     justify-items: center;
-    align-items: center;
+    row-gap: 48px;
     width: 100%; }
     main .servicios .envoltorio-caja-servicios .servicio-caja {
       display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0px;
+      justify-content: center;
+      justify-items: center;
       width: 18rem;
       height: 31rem;
       background-color: whitesmoke;
@@ -91,9 +90,10 @@ main .servicios {
     main .servicios .envoltorio-caja-servicios {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 100%;
+      grid-template-rows: repeat(1, 100%);
+      gap: 0px;
+      justify-content: center;
       justify-items: center;
-      align-items: center;
       height: 600px;
       width: 100%;
       overflow: hidden; }
@@ -139,8 +139,7 @@ main .ubicacion {
   main .ubicacion {
     display: grid;
     grid-template-columns: 440px 1fr;
-    grid-template-rows: 1fr;
-    background-color: rgba(222, 232, 241, 0.383); }
+    grid-template-rows: 1fr; }
     main .ubicacion .contenedor-gps {
       grid-column-start: 1; }
       main .ubicacion .contenedor-gps .ubicacion-gps {
@@ -169,7 +168,9 @@ main .ubicacion {
 
 /* Cortes */
 /* Pagina de cortes */
-main .presentacion-cortes h1 {
+main .servicios .titulo, main .presentacion-cortes .titulo, main .presentacion-turnos .titulo, main .titulo, main .presentacion-beneficios .titulo {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center; }
 
 main .presentacion-cortes p {
@@ -178,17 +179,19 @@ main .presentacion-cortes p {
 
 main .envoltorio-cajas-cortes {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  gap: 2rem;
   justify-content: center;
   justify-items: center;
-  gap: 2rem;
   padding-bottom: 2rem; }
   main .envoltorio-cajas-cortes .caja-cortes {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 2fr);
+    gap: 0px;
     justify-content: center;
+    justify-items: center;
     height: 500px;
     width: 200px;
     border-radius: 40px;
@@ -209,7 +212,10 @@ main .envoltorio-cajas-cortes {
   main .envoltorio-cajas-cortes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr); } }
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    justify-items: center; } }
 
 @media screen and (min-width: 992px) and (min-height: 1314px) {
   main .envoltorio-cajas-cortes {
@@ -217,7 +223,9 @@ main .envoltorio-cajas-cortes {
 
 /* Turnos */
 /* Pagina de turnos */
-main .presentacion-turnos h1 {
+main .servicios .titulo, main .presentacion-cortes .titulo, main .presentacion-turnos .titulo, main .titulo, main .presentacion-beneficios .titulo {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center; }
 
 main .presentacion-turnos p {
@@ -226,9 +234,11 @@ main .presentacion-turnos p {
 
 main .caja-turno .formulario-turno fieldset .casillas-turnos {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px;
   justify-content: center;
+  justify-items: center;
   padding-bottom: 2rem; }
   main .caja-turno .formulario-turno fieldset .casillas-turnos label {
     text-align: center;
@@ -259,9 +269,11 @@ main .caja-turno .formulario-turno fieldset .boton-enviar-turno {
 @media screen and (min-width: 992px) {
   main .caja-turno .formulario-turno fieldset .casillas-turnos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0px;
     justify-content: center;
+    justify-items: center;
     padding-top: 3rem; }
     main .caja-turno .formulario-turno fieldset .casillas-turnos label {
       grid-column-start: 3; }
@@ -275,7 +287,9 @@ main .caja-turno .formulario-turno fieldset .boton-enviar-turno {
 
 /* Nosotros */
 /* Pagina de nosotros */
-main h1 {
+main .servicios .titulo, main .presentacion-cortes .titulo, main .presentacion-turnos .titulo, main .titulo, main .presentacion-beneficios .titulo {
+  font-size: 2rem;
+  font-weight: bold;
   text-align: center; }
 
 main .historia-nosotros .historia-texto p {
@@ -316,8 +330,11 @@ main .equipo-de-trabajo-nosotros {
 @media screen and (min-width: 992px) {
   main .historia-nosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+    justify-items: center;
     padding-top: 2rem; }
     main .historia-nosotros .historia-texto {
       grid-row: span 2; }
@@ -351,8 +368,11 @@ main .equipo-de-trabajo-nosotros {
 @media screen and (min-width: 1374px) {
   main .historia-nosotros {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+    justify-items: center;
     padding-top: 2rem; }
     main .historia-nosotros .historia-texto {
       grid-row: span 2; }
@@ -382,13 +402,16 @@ main .equipo-de-trabajo-nosotros {
 
 /* Beneficios */
 /* pagaina Beneficios */
+main .servicios .titulo, main .presentacion-cortes .titulo, main .presentacion-turnos .titulo, main .titulo, main .presentacion-beneficios .titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center; }
+
 main .presentacion-beneficios {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 20% 1fr;
   justify-content: center; }
-  main .presentacion-beneficios h1 {
-    text-align: center; }
   main .presentacion-beneficios p {
     padding-top: 15px;
     text-align: center; }

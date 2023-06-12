@@ -1,10 +1,14 @@
 /* Pagina de cortes */
 
+//Importando utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extends";
 
 main {
     .presentacion-cortes {
-        h1 {
-            text-align: center;
+        .titulo {
+            @extend %titulo;
         }
 
         p {
@@ -14,19 +18,13 @@ main {
     }
 
     .envoltorio-cajas-cortes {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(8, 1fr);
-        justify-content: center;
-        justify-items: center;
-        gap: 2rem;
+        
+        @include grid-centrados(1,1fr,8,1fr,2rem);
+        
         padding-bottom: 2rem;
 
         .caja-cortes {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 2fr;
-            justify-content: center;
+            @include grid-centrados(1,1fr,1,2fr,0px);
             height: 500px;
             width: 200px;
             border-radius: 40px;
@@ -58,9 +56,7 @@ main {
 
     @media screen and (min-width:992px) {
         .envoltorio-cajas-cortes {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            @include grid-centrados(4,1fr,2,1fr,2rem);
         }
     }
 

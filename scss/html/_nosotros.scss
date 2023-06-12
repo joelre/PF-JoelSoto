@@ -1,8 +1,13 @@
 /* Pagina de nosotros */
 
+//Importando utilidades
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extends";
+
 main {
-    h1 {
-        text-align: center;
+    .titulo {
+        @extend %titulo;
     }
 
     .historia-nosotros {
@@ -57,9 +62,7 @@ main {
 
     @media screen and (min-width:992px){
         .historia-nosotros{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            @include grid-centrados(2,1fr,2,1fr,0px);
             padding-top: 2rem;
             .historia-texto {
                 grid-row: span 2;
@@ -111,9 +114,7 @@ main {
 
     @media screen and (min-width:1374px) {
         .historia-nosotros{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            @include grid-centrados(2,1fr,2,1fr,0px);
             padding-top: 2rem;
             .historia-texto {
                 grid-row: span 2;
