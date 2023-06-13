@@ -11,7 +11,11 @@ main {
     }
 
     .historia-nosotros {
+        @extend %borde-carta;
         .historia-texto {
+            background-color: white;
+            border-radius: 2%;
+            margin-bottom: 1rem;
             p {
                 text-align: center;
                 font-size: medium;
@@ -64,10 +68,10 @@ main {
     @media screen and (min-width:992px) {
         .historia-nosotros {
             @include grid-centrados(2, 1fr, 2, 1fr, 0px);
-            padding-top: 2rem;
+            margin: 2rem;
 
             .historia-texto {
-                padding-left: 2%;
+                margin-left: 2%;
                 grid-row: span 2;
 
                 p {
@@ -83,6 +87,7 @@ main {
                 padding-bottom: 3rem;
 
                 img {
+                    border-radius: 5%;
                     width: 42vw;
                 }
             }
@@ -93,6 +98,7 @@ main {
                 grid-column-start: 2;
 
                 img {
+                    border-radius: 5%;
                     width: 42vw;
                 }
             }

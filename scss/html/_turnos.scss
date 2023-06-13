@@ -12,7 +12,6 @@ main {
         }
 
         p {
-            padding-top: 15px;
             text-align: center;
         }
     }
@@ -21,9 +20,12 @@ main {
     .caja-turno {
         .formulario-turno {
             fieldset {
+                
                 .casillas-turnos {
                     @include grid-centrados(1, 1fr, 2, 1fr, 0px);
                     padding-bottom: 2rem;
+                    @extend %borde-carta;
+                    margin: 1% 20%;
 
                     label {
                         text-align: center;

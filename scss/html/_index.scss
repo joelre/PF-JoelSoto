@@ -33,7 +33,8 @@ main {
 
         .envoltorio-caja-servicios {
             @include grid-centrados(1, 1fr, 4, 1fr, 2rem);
-            padding-bottom: 2rem;
+            @extend %borde-carta;
+            padding: 2rem 0;
 
             .servicio-caja {
                 @include grid-centrados(1, 1fr, 2, 1fr, 0px);

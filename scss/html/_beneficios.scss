@@ -7,17 +7,11 @@
 
 main {
     .presentacion-beneficios {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 1fr;
-        justify-content: center;
-
         .titulo {
             @extend %titulo;
         }
 
         p {
-            padding-top: 15px;
             text-align: center;
         }
     }
@@ -29,6 +23,7 @@ main {
         align-items: center;
         padding: 2rem 0rem 2rem 0rem;
         gap: 2rem;
+        @extend %borde-carta;
         background-color: rgb(241, 238, 235);
 
         .caja-beneficios {

@@ -44,6 +44,9 @@ main .envoltorio-beneficios .caja-beneficios .divisor-beneficio {
   height: 1px;
   border: 1px solid grey; }
 
+main .servicios .envoltorio-caja-servicios, main .envoltorio-cajas-cortes, main .caja-turno .formulario-turno fieldset .casillas-turnos, main .historia-nosotros, main .envoltorio-beneficios {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
 main .galeria {
   padding-bottom: 20px;
   background-color: whitesmoke; }
@@ -63,7 +66,7 @@ main .servicios {
     gap: 2rem;
     justify-content: center;
     justify-items: center;
-    padding-bottom: 2rem; }
+    padding: 2rem 0; }
     main .servicios .envoltorio-caja-servicios .servicio-caja {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -176,8 +179,10 @@ main .envoltorio-beneficios .caja-beneficios .divisor-beneficio {
   height: 1px;
   border: 1px solid grey; }
 
+main .servicios .envoltorio-caja-servicios, main .envoltorio-cajas-cortes, main .caja-turno .formulario-turno fieldset .casillas-turnos, main .historia-nosotros, main .envoltorio-beneficios {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
 main .presentacion-cortes p {
-  padding-top: 15px;
   text-align: center; }
 
 main .envoltorio-cajas-cortes {
@@ -187,7 +192,7 @@ main .envoltorio-cajas-cortes {
   gap: 2rem;
   justify-content: center;
   justify-items: center;
-  padding-bottom: 2rem; }
+  padding: 2rem 0; }
   main .envoltorio-cajas-cortes .caja-cortes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -239,8 +244,10 @@ main .envoltorio-beneficios .caja-beneficios .divisor-beneficio {
   height: 1px;
   border: 1px solid grey; }
 
+main .servicios .envoltorio-caja-servicios, main .envoltorio-cajas-cortes, main .caja-turno .formulario-turno fieldset .casillas-turnos, main .historia-nosotros, main .envoltorio-beneficios {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
 main .presentacion-turnos p {
-  padding-top: 15px;
   text-align: center; }
 
 main .caja-turno .formulario-turno fieldset .casillas-turnos {
@@ -250,7 +257,8 @@ main .caja-turno .formulario-turno fieldset .casillas-turnos {
   gap: 0px;
   justify-content: center;
   justify-items: center;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  margin: 1% 20%; }
   main .caja-turno .formulario-turno fieldset .casillas-turnos label {
     text-align: center;
     font-size: large;
@@ -308,10 +316,17 @@ main .envoltorio-beneficios .caja-beneficios .divisor-beneficio {
   height: 1px;
   border: 1px solid grey; }
 
-main .historia-nosotros .historia-texto p {
-  text-align: center;
-  font-size: medium;
-  font-weight: 550; }
+main .servicios .envoltorio-caja-servicios, main .envoltorio-cajas-cortes, main .caja-turno .formulario-turno fieldset .casillas-turnos, main .historia-nosotros, main .envoltorio-beneficios {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+main .historia-nosotros .historia-texto {
+  background-color: white;
+  border-radius: 2%;
+  margin-bottom: 1rem; }
+  main .historia-nosotros .historia-texto p {
+    text-align: center;
+    font-size: medium;
+    font-weight: 550; }
 
 main .historia-nosotros .imagen1-nosotros {
   display: none; }
@@ -351,9 +366,9 @@ main .equipo-de-trabajo-nosotros {
     gap: 0px;
     justify-content: center;
     justify-items: center;
-    padding-top: 2rem; }
+    margin: 2rem; }
     main .historia-nosotros .historia-texto {
-      padding-left: 2%;
+      margin-left: 2%;
       grid-row: span 2; }
       main .historia-nosotros .historia-texto p {
         text-align: center;
@@ -364,12 +379,14 @@ main .equipo-de-trabajo-nosotros {
       grid-column-start: 2;
       padding-bottom: 3rem; }
       main .historia-nosotros .imagen1-nosotros img {
+        border-radius: 5%;
         width: 42vw; }
     main .historia-nosotros .imagen2-nosotros {
       display: block;
       justify-self: center;
       grid-column-start: 2; }
       main .historia-nosotros .imagen2-nosotros img {
+        border-radius: 5%;
         width: 42vw; }
   main .equipo-de-trabajo-nosotros {
     display: grid;
@@ -427,14 +444,11 @@ main .envoltorio-beneficios .caja-beneficios .divisor-beneficio {
   height: 1px;
   border: 1px solid grey; }
 
-main .presentacion-beneficios {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 1fr;
-  justify-content: center; }
-  main .presentacion-beneficios p {
-    padding-top: 15px;
-    text-align: center; }
+main .servicios .envoltorio-caja-servicios, main .envoltorio-cajas-cortes, main .caja-turno .formulario-turno fieldset .casillas-turnos, main .historia-nosotros, main .envoltorio-beneficios {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); }
+
+main .presentacion-beneficios p {
+  text-align: center; }
 
 main .envoltorio-beneficios {
   display: flex;
