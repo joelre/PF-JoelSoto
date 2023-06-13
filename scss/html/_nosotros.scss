@@ -31,7 +31,7 @@ main {
     .equipo-de-trabajo-nosotros {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 2% repeat(4,1fr);
+        grid-template-rows: 2% repeat(4, 1fr);
         justify-content: center;
         gap: 2rem;
         background-color: rgb(241, 238, 235);
@@ -51,60 +51,63 @@ main {
             overflow: hidden;
             background-color: rgba(218, 165, 32, 0.572);
 
-            .nombre{
+            .nombre {
                 opacity: 0;
             }
-            img:hover .nombre{
+
+            img:hover .nombre {
                 opacity: 1;
             }
         }
     }
 
-    @media screen and (min-width:992px){
-        .historia-nosotros{
-            @include grid-centrados(2,1fr,2,1fr,0px);
+    @media screen and (min-width:992px) {
+        .historia-nosotros {
+            @include grid-centrados(2, 1fr, 2, 1fr, 0px);
             padding-top: 2rem;
+
             .historia-texto {
                 padding-left: 2%;
                 grid-row: span 2;
+
                 p {
                     text-align: center;
                     font-size: 1.3vw;
                 }
             }
-    
+
             .imagen1-nosotros {
                 display: block;
                 justify-self: center;
                 grid-column-start: 2;
                 padding-bottom: 3rem;
-    
+
                 img {
                     width: 42vw;
                 }
             }
-    
+
             .imagen2-nosotros {
                 display: block;
                 justify-self: center;
                 grid-column-start: 2;
-    
+
                 img {
                     width: 42vw;
                 }
             }
         }
-        
+
         .equipo-de-trabajo-nosotros {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 10% 2fr;
-            
+
             h2 {
                 grid-column: span 2;
             }
 
-            .caja-imagenes-nosotros{
+            .caja-imagenes-nosotros {
                 width: 270px;
                 height: 270px;
             }
@@ -112,44 +115,46 @@ main {
     }
 
     @media screen and (min-width:1374px) {
-        .historia-nosotros{
-            @include grid-centrados(2,1fr,2,1fr,0px);
+        .historia-nosotros {
+            @include grid-centrados(2, 1fr, 2, 1fr, 0px);
             padding-top: 2rem;
+
             .historia-texto {
                 grid-row: span 2;
-    
+
                 p {
                     text-align: center;
                     font-size: 1.3vw;
                 }
             }
-    
+
             .imagen1-nosotros {
                 display: block;
                 justify-self: center;
                 grid-column-start: 2;
                 padding-bottom: 3rem;
-    
+
                 img {
                     width: 42vw;
                 }
             }
-    
+
             .imagen2-nosotros {
                 display: block;
                 justify-self: center;
                 grid-column-start: 2;
-    
+
                 img {
                     width: 42vw;
                 }
             }
         }
-        
+
         .equipo-de-trabajo-nosotros {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: 10% 1fr;
+
             h2 {
                 grid-column: span 4;
             }

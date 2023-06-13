@@ -30,7 +30,7 @@ main {
         padding: 2rem 0rem 2rem 0rem;
         gap: 2rem;
         background-color: rgb(241, 238, 235);
-        
+
         .caja-beneficios {
             display: grid;
             grid-template-columns: 1fr;
@@ -73,12 +73,13 @@ main {
         }
     }
 
-    @media screen and (min-width:992px){
-        .envoltorio-beneficios{
+    @media screen and (min-width:992px) {
+        .envoltorio-beneficios {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            .caja-beneficios{
+
+            .caja-beneficios {
                 margin: 0 10vw;
             }
         }

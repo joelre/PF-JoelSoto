@@ -27,16 +27,16 @@ main {
     .servicios {
         background-color: $color-secundario;
 
-        .titulo{
+        .titulo {
             @extend %titulo;
         }
 
         .envoltorio-caja-servicios {
-            @include grid-centrados(1,1fr,4,1fr,2rem);
+            @include grid-centrados(1, 1fr, 4, 1fr, 2rem);
             padding-bottom: 2rem;
-                    
+
             .servicio-caja {
-                @include grid-centrados(1,1fr,2,1fr,0px);
+                @include grid-centrados(1, 1fr, 2, 1fr, 0px);
                 width: 18rem;
                 height: 31rem;
                 background-color: $color-principal;
@@ -65,13 +65,13 @@ main {
 
         @media screen and (min-width:992px) {
             .envoltorio-caja-servicios {
-                @include grid-centrados(2,1fr,2,1fr,4rem);
+                @include grid-centrados(2, 1fr, 2, 1fr, 4rem);
             }
         }
 
-        @media screen and (min-width:1374px){
+        @media screen and (min-width:1374px) {
             .envoltorio-caja-servicios {
-                @include grid-centrados(4,1fr,1,1fr,0px);
+                @include grid-centrados(4, 1fr, 1, 1fr, 0px);
             }
         }
     }

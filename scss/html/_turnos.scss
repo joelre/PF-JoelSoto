@@ -20,10 +20,11 @@ main {
 
     .caja-turno {
         .formulario-turno {
-            fieldset {     
+            fieldset {
                 .casillas-turnos {
-                    @include grid-centrados(1,1fr,2,1fr,0px);
+                    @include grid-centrados(1, 1fr, 2, 1fr, 0px);
                     padding-bottom: 2rem;
+
                     label {
                         text-align: center;
                         font-size: large;
@@ -46,9 +47,10 @@ main {
                     grid-template-columns: 1fr;
                     grid-template-rows: 1fr;
                     padding: 2rem 0rem 2rem 0rem;
+
                     input {
                         justify-self: center;
-                        width: 30vw;                        
+                        width: 30vw;
                         background-color: rgba(102, 102, 216, 0.75);
                         color: white;
                         font-size: medium;
@@ -61,26 +63,31 @@ main {
             }
         }
     }
+
     @media screen and (min-width:992px) {
-        .caja-turno{
-            .formulario-turno{
-                fieldset{
-                    
-                    .casillas-turnos{
-                        @include grid-centrados(6,1fr,1,1fr,0px);
+        .caja-turno {
+            .formulario-turno {
+                fieldset {
+
+                    .casillas-turnos {
+                        @include grid-centrados(6, 1fr, 1, 1fr, 0px);
                         padding-top: 3rem;
-                        label{
+
+                        label {
                             grid-column-start: 3;
                         }
-                        input{
+
+                        input {
                             width: 15vw;
                         }
-                        select{
+
+                        select {
                             width: 15vw;
                         }
                     }
-                    .boton-enviar-turno{
-                        input{
+
+                    .boton-enviar-turno {
+                        input {
                             width: 10vw;
                             justify-self: center;
                         }
@@ -88,6 +95,6 @@ main {
                 }
             }
         }
-        
-    } 
+
+    }
 }

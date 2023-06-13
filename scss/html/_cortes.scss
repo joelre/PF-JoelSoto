@@ -18,26 +18,26 @@ main {
     }
 
     .envoltorio-cajas-cortes {
-        
-        @include grid-centrados(1,1fr,8,1fr,2rem);
-        
+
+        @include grid-centrados(1, 1fr, 8, 1fr, 2rem);
+
         padding-bottom: 2rem;
 
         .caja-cortes {
-            @include grid-centrados(1,1fr,1,2fr,0px);
+            @include grid-centrados(1, 1fr, 1, 2fr, 0px);
             height: 500px;
             width: 200px;
             border-radius: 40px;
             box-shadow: 2px 2px 5px rgb(106, 104, 104);
             overflow: hidden;
 
-            .imagenes-cortes{
+            .imagenes-cortes {
                 img {
                     max-width: 100%;
                 }
-                
+
             }
-            
+
 
             .descripcion-cortes {
                 text-align: center;
@@ -52,10 +52,10 @@ main {
 
     @media screen and (min-width:992px) {
         .envoltorio-cajas-cortes {
-            @include grid-centrados(4,1fr,2,1fr,2rem);
+            @include grid-centrados(4, 1fr, 2, 1fr, 2rem);
 
-            .caja-cortes{
-                img:hover{
+            .caja-cortes {
+                img:hover {
                     transition: transform 1.2s;
                     transform: scale(1.2);
                 }
@@ -66,8 +66,9 @@ main {
     @media screen and (min-width:992px) and (min-height:1314px) {
         .envoltorio-cajas-cortes {
             height: 81vh;
-            .caja-cortes{
-                img:hover{
+
+            .caja-cortes {
+                img:hover {
                     transition: transform 1.2s;
                     transform: scale(1.2);
                 }
