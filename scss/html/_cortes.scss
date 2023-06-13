@@ -35,11 +35,7 @@ main {
                 img {
                     max-width: 100%;
                 }
-    
-                img:hover{
-                    transition: transform 1.2s;
-                    transform: scale(1.2);
-                }
+                
             }
             
 
@@ -57,12 +53,25 @@ main {
     @media screen and (min-width:992px) {
         .envoltorio-cajas-cortes {
             @include grid-centrados(4,1fr,2,1fr,2rem);
+
+            .caja-cortes{
+                img:hover{
+                    transition: transform 1.2s;
+                    transform: scale(1.2);
+                }
+            }
         }
     }
 
     @media screen and (min-width:992px) and (min-height:1314px) {
         .envoltorio-cajas-cortes {
             height: 81vh;
+            .caja-cortes{
+                img:hover{
+                    transition: transform 1.2s;
+                    transform: scale(1.2);
+                }
+            }
         }
     }
 

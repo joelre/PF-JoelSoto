@@ -15,7 +15,7 @@ main {
             p {
                 text-align: center;
                 font-size: medium;
-                font-weight: 700;
+                font-weight: 550;
             }
         }
 
@@ -65,12 +65,11 @@ main {
             @include grid-centrados(2,1fr,2,1fr,0px);
             padding-top: 2rem;
             .historia-texto {
+                padding-left: 2%;
                 grid-row: span 2;
-    
                 p {
-                    text-align: left;
+                    text-align: center;
                     font-size: 1.3vw;
-                    font-weight: 700;
                 }
             }
     
@@ -120,9 +119,8 @@ main {
                 grid-row: span 2;
     
                 p {
-                    text-align: left;
+                    text-align: center;
                     font-size: 1.3vw;
-                    font-weight: 700;
                 }
             }
     
