@@ -12,10 +12,12 @@ main {
 
     .historia-nosotros {
         @extend %borde-carta;
+
         .historia-texto {
             background-color: white;
             border-radius: 2%;
             margin-bottom: 1rem;
+
             p {
                 text-align: center;
                 font-size: medium;
