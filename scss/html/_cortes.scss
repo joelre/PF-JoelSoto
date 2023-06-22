@@ -23,7 +23,11 @@ main {
         padding: 2rem 0;
 
         .caja-cortes {
-            @include grid-centrados(1, 1fr, 1, 2fr, 0px);
+            //@include grid-centrados(1, 1fr, 1, 2fr, 0px);
+            background-image: linear-gradient(to bottom, #b7ae8f, #d9d9db);
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 15rem 1fr 2rem;
             height: 500px;
             width: 200px;
             border-radius: 40px;
@@ -31,6 +35,12 @@ main {
             overflow: hidden;
 
             .imagenes-cortes {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+
                 img {
                     max-width: 100%;
                 }
@@ -39,12 +49,24 @@ main {
 
 
             .descripcion-cortes {
-                text-align: center;
+                .subtitulo-corte {
+                    text-align: center;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                }
             }
 
-            .precio-cortes p {
-                text-align: center;
-                font-weight: bold;
+            .precio-cortes {
+                p {
+                    text-align: center;
+                    font-weight: bold;
+                }
+
             }
         }
     }

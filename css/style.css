@@ -194,21 +194,30 @@ main .envoltorio-cajas-cortes {
   justify-items: center;
   padding: 2rem 0; }
   main .envoltorio-cajas-cortes .caja-cortes {
+    background-image: linear-gradient(to bottom, #b7ae8f, #d9d9db);
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 2fr);
-    gap: 0px;
-    justify-content: center;
-    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15rem 1fr 2rem;
     height: 500px;
     width: 200px;
     border-radius: 40px;
     box-shadow: 2px 2px 5px #6a6868;
     overflow: hidden; }
-    main .envoltorio-cajas-cortes .caja-cortes .imagenes-cortes img {
-      max-width: 100%; }
-    main .envoltorio-cajas-cortes .caja-cortes .descripcion-cortes {
-      text-align: center; }
+    main .envoltorio-cajas-cortes .caja-cortes .imagenes-cortes {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center; }
+      main .envoltorio-cajas-cortes .caja-cortes .imagenes-cortes img {
+        max-width: 100%; }
+    main .envoltorio-cajas-cortes .caja-cortes .descripcion-cortes .subtitulo-corte {
+      text-align: center;
+      text-decoration: underline;
+      font-weight: bold; }
+    main .envoltorio-cajas-cortes .caja-cortes .descripcion-cortes p {
+      text-align: center;
+      font-weight: bold; }
     main .envoltorio-cajas-cortes .caja-cortes .precio-cortes p {
       text-align: center;
       font-weight: bold; }
@@ -326,7 +335,7 @@ main .historia-nosotros .historia-texto {
   main .historia-nosotros .historia-texto p {
     text-align: center;
     font-size: medium;
-    font-weight: 550; }
+    font-weight: bold; }
 
 main .historia-nosotros .imagen1-nosotros {
   display: none; }
@@ -345,6 +354,7 @@ main .equipo-de-trabajo-nosotros {
   main .equipo-de-trabajo-nosotros h2 {
     text-align: center; }
   main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros {
+    position: relative;
     justify-self: center;
     height: 300px;
     width: 300px;
@@ -354,9 +364,28 @@ main .equipo-de-trabajo-nosotros {
     overflow: hidden;
     background-color: rgba(218, 165, 32, 0.572); }
     main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros .nombre {
-      opacity: 0; }
-    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros img:hover .nombre {
-      opacity: 1; }
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s ease; }
+      main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros .nombre p {
+        color: white;
+        font-weight: 900;
+        font-size: larger;
+        text-align: center; }
+    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros img {
+      position: absolute;
+      width: 300px;
+      height: 350px; }
+  main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros:active .nombre {
+    opacity: 1; }
+  main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros:active img {
+    filter: blur(3px); }
 
 @media screen and (min-width: 992px) {
   main .historia-nosotros {
@@ -393,10 +422,7 @@ main .equipo-de-trabajo-nosotros {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 10% 2fr; }
     main .equipo-de-trabajo-nosotros h2 {
-      grid-column: span 2; }
-    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros {
-      width: 270px;
-      height: 270px; } }
+      grid-column: span 2; } }
 
 @media screen and (min-width: 1374px) {
   main .historia-nosotros {
@@ -430,7 +456,11 @@ main .equipo-de-trabajo-nosotros {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 10% 1fr; }
     main .equipo-de-trabajo-nosotros h2 {
-      grid-column: span 4; } }
+      grid-column: span 4; }
+    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros:hover .nombre {
+      opacity: 1; }
+    main .equipo-de-trabajo-nosotros .caja-imagenes-nosotros:hover img {
+      filter: blur(3px); } }
 
 /* Beneficios */
 /* pagaina Beneficios */
